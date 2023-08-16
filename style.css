@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #393646;
+}
+
+
+.box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+
+}
+
+
+.box div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    word-wrap: break-word;
+
+}
+
+input,
+#resultado {
+    outline: none;
+    width: 90%;
+    color: white;
+    background: rgb(32, 32, 32);
+}
+
+#btn-apagar {
+    background: rgb(65, 65, 65);
+    color: white;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.valores button,
+.operacoes button {
+    font-size: 30px;
+    width: 30%;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(32, 32, 32);
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: auto;
+
+}
+
+.numero {
+    background: rgb(59, 59, 59);
+    color: white;
+}
+
+.numero:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    padding-top: 80px;
+}
+
+.operacoes {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.operacoes:hover,
+#btn-apagar:hover {
+    background: rgb(59, 59, 59);
+}
+
+[data-operacao] {
+    background: rgb(243, 128, 100);
+}
+
+[data-operacao]:hover {
+    background: rgb(238, 122, 93);
+}
+
+
+
+@media screen and (max-width: 700px) {
+    * {
+        font-size: 20px;
+        margin: auto;
+        padding: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    #resultado {
+        font-size: 30px;
+    }
+
+    .valores button,
+    .operacoes button,
+    input {
+        width: 20%;
+    }
+
+    #btn-apagar,
+    #resultado {
+        width: 100%;
+    }
+}
